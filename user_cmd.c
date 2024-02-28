@@ -15,7 +15,7 @@ void get_command(char *cmd, size_t n)
 			my_printf("\n");
 			exit(EXIT_SUCCESS);
 		}
-		else 
+		else
 		{
 			perror("fgets");
 			exit(EXIT_FAILURE);

@@ -10,7 +10,7 @@ int main(void)
 {
 	char cmd[200];
 
-	while(1)
+	while (1)
 	{
 		my_printf("My_Shell$ ");
 		get_command(cmd, sizeof(cmd));
