@@ -5,11 +5,11 @@
  * @cmd: the command gotten by the user
  */
 
-void execute_command(char *cmd)
+void execute_command(char *const cmd)
 {
 	pid_t child_pid = fork();
 	char cmd_path[200];
-	char *args[] = {cmd, NULL};
+	char *const args[] = {cmd, NULL};
 
 	if (child_pid == -1)
 	{
@@ -25,6 +25,6 @@ void execute_command(char *cmd)
 	}
 	else
 	{
-		wait;
+		wait(NULL);
 	}
 }
